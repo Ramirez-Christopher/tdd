@@ -1,10 +1,6 @@
 name: CI workflow
 
-on:
-  push:
-    branches: -origin
-  pull_request:
-    branches: -origin
+on: [push]
 
 jobs:
   build:
