@@ -62,8 +62,5 @@ def delete_counter(name):
     global COUNTERS
     if name not in COUNTERS:
         return {"Message": f"Counter {name} does not exist"}, status.HTTP_404_NOT_FOUND
-    
+
     return {name: COUNTERS[name]}, status.HTTP_204_NO_CONTENT
-
-
-
