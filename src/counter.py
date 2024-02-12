@@ -12,8 +12,6 @@ COUNTERS = {}
 
 
 @app.route('/counters/<name>', methods=['POST'])
-
-
 def create_counter(name):
     """Create a counter"""
 
