@@ -16,7 +16,7 @@ COUNTERS = {}
 
 def create_counter(name):
     """Create a counter"""
-    
+
     app.logger.info(f"Request to create counter: {name}")
     global COUNTERS
 
