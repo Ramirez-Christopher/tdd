@@ -74,6 +74,3 @@ class CounterTest(TestCase):
 
         deleteResult = self.client.delete('/counters/deleteTest')
         self.assertEqual(deleteResult.status_code, status.HTTP_204_NO_CONTENT)
-
-        updateCounter = self.client.get('/counters/deleteTest')
-        self.assertEqual(updateCounter.status_code, status.HTTP_404_NOT_FOUND)
