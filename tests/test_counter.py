@@ -72,7 +72,7 @@ class CounterTest(TestCase):
         result = self.client.post('/counters/deleteTest')
         self.assertEqual(result.status_code, status.HTTP_201_CREATED)
 
-        deleteResult = self.client.put('/counters/deleteTest')
+        deleteResult = self.client.delete('/counters/deleteTest')
         self.assertEqual(deleteResult.status_code, status.HTTP_204_NO_CONTENT)
 
         updateCounter = self.client.get('/counters/deleteTest')
